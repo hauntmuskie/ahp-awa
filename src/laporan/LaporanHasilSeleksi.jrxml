@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="laporan hasil seleksi" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a35a0630-0e03-4d5f-8867-47fd086f8695">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jas					<jr:column width="90" uuid="56b2b9a4-4e31-4c82-8065-b24f9b8b3119">
+						<jr:tableHeader style="table 2_TH" height="30">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="90" height="30" backcolor="#FFFFCC" uuid="a262eca3-5b66-4f30-abc2-d3fa2f2715c4"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[ID Supplier]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="table 2_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="cb209ad2-44e2-49e7-b1a0-a5093d7f4475"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{id_supplier}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>/jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="laporan hasil seleksi" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a35a0630-0e03-4d5f-8867-47fd086f8695">
 	<property name="ireport.zoom" value="1.1000000000000012"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="142"/>
@@ -254,6 +271,7 @@ FROM
 						<jr:detailCell style="table 2_TD" height="20">
 							<textField>
 								<reportElement x="0" y="0" width="90" height="20" uuid="0c1d1d80-1a9d-4b44-a22b-bfaad612481a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
 								<textFieldExpression><![CDATA[$F{nama_supplier}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -269,8 +287,9 @@ FROM
 							</staticText>
 						</jr:tableHeader>
 						<jr:detailCell style="table 2_TD" height="20">
-							<textField>
+							<textField pattern="#,##0.00">
 								<reportElement x="0" y="0" width="90" height="20" uuid="477344fd-c401-4c3c-83f0-08c7e3f2aa3d"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
 								<textFieldExpression><![CDATA[$F{hasil_penilaian}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="laporan hasil seleksi" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a35a0630-0e03-4d5f-8867-47fd086f8695">
+	<property name="ireport.zoom" value="1.1000000000000012"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="142"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Data Seleksi" uuid="40952813-7e0a-429a-96ec-4295ba46ec07">
+		<queryString language="SQL">
+			<![CDATA[SELECT * FROM seleksi ORDER BY hasil_penilaian DESC;]]>
+		</queryString>
+		<field name="id_paket" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="nama_paket" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="jumlah_orang" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="hasil_penilaian" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="Table Dataset 1" uuid="2e0c1baf-21d6-422d-baf0-14fe4654fd92"/>
+	<subDataset name="Table Dataset 2" uuid="b8e98e16-7365-4379-a989-e829dd0527fd"/>
+	<parameter name="PATH_IMG" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     *
+FROM
+     `seleksi` seleksi]]>
+	</queryString>
+	<field name="id_supplier" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_supplier" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hasil_penilaian" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="119" splitType="Stretch">
+			<staticText>
+				<reportElement x="148" y="30" width="407" height="27" uuid="f0f68e88-9493-47b6-bea2-afcf1afc56bd"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="SansSerif" size="18" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[PT ARJUNA LESTARI UTAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="148" y="57" width="407" height="44" uuid="ca1b2c60-1bab-4032-8065-18763fff9495"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="SansSerif" size="10" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[KAWASAN INDUSTRI JABABEKA V, Jl. Science Boulevard A2 No. 8, Desa Sertajaya, Kec. Cikarang Timur, Kab. Bekasi, Provinsi Jawa Barat, Indonesia 17530]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="0" y="113" width="555" height="1" uuid="3dca53f9-4a8b-488d-a484-2fbddfa8fea9"/>
+			</line>
+			<image>
+				<reportElement x="0" y="30" width="148" height="71" uuid="9fa9fc10-f281-4d29-83e4-8c8f72311b20"/>
+				<imageExpression><![CDATA["C:\\Users\\BangDul Official\\OneDrive\\Dokumen\\alum.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="Float" x="0" y="0" width="555" height="35" uuid="3a8735f4-c1cf-4e2c-900f-c320717556d5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="SansSerif" size="14" isBold="true" isItalic="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Laporan Hasil Seleksi Supplier]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="274" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement positionType="Float" x="456" y="157" width="99" height="20" uuid="7a83569e-1d27-455b-98c0-5578e37dcdda"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="390" y="177" width="165" height="20" uuid="36646086-3158-4000-96bf-e9bb05734b25"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Manager]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="390" y="254" width="165" height="20" uuid="4a8ab4cd-d78f-45ec-b765-d677eedff35e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Feni Astuti]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="390" y="254" width="165" height="1" uuid="c3985f27-b569-4ac7-ab40-81febbe1e589"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="390" y="157" width="66" height="20" uuid="f261e112-ec79-4b02-abe8-f6944dff98d9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jawa Barat, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="86" width="48" height="15" uuid="5f6b7334-b9f0-4a2d-8922-bbd4da6f41a2"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Times New Roman" size="10" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Catatan : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="23" y="101" width="144" height="15" uuid="b247e44c-10df-4e54-8ed9-93c9fc30a947"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="Times New Roman" size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[- Ranking]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="64" y="101" width="491" height="15" uuid="1844bf4b-f584-46a3-8cb7-8e0759e3d431"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="Times New Roman" size="10" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[ditentukan dari hasil penilaian supplier nilai terbesar sampai terkecil.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="64" y="116" width="491" height="15" uuid="36c6a319-9abb-4c26-9033-8c49384d7639"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="Times New Roman" size="10" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[tertinggi merupakan supplier terbaik untuk diterima sebagai rekomendasi paket makanan.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="23" y="116" width="144" height="15" uuid="5ac26a25-715d-4fc6-9c43-5fe17a660121"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="Times New Roman" size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[- Ranking]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement key="table 2" style="table 2" x="0" y="0" width="555" height="50" uuid="76d3a0b1-5dcb-4dd9-9061-fe1ab8998441"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Dataset 2" uuid="7831b0f3-347e-438a-b0a1-69940855e7d9">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource(1)]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="90" uuid="38bebdab-be26-4c48-a2c7-37d806311a4a">
+						<jr:tableHeader style="table 2_TH" height="30">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="90" height="30" backcolor="#FFFFCC" uuid="33da7988-cc2f-4eee-8c1c-d5821fadb2d6"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Ranking]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="table 2_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="3b563ab9-0220-499e-a3ff-ab4dab325d3d"/>
+								<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="4818b821-b907-415f-958b-e7720fd98605">
+						<jr:tableHeader style="table 2_TH" height="30">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="90" height="30" backcolor="#FFFFCC" uuid="a262eca3-5b66-4f30-abc2-d3fa2f2715c4"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[ID Supplier]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="table 2_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="cb209ad2-44e2-49e7-b1a0-a5093d7f4475"/>
+								<textFieldExpression><![CDATA[$F{id_supplier}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="48d5354b-03dc-44a6-b588-c86ceb8b0815">
+						<jr:tableHeader style="table 2_TH" height="30">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="90" height="30" backcolor="#FFFFCC" uuid="6a38bb0a-1689-4d39-a07f-c2be3521ccfb"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Nama Supplier]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="table 2_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="0c1d1d80-1a9d-4b44-a22b-bfaad612481a"/>
+								<textFieldExpression><![CDATA[$F{nama_supplier}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="f971b9a0-36f3-4008-abe2-f440d233886e">
+						<jr:tableHeader style="table 2_TH" height="30">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="90" height="30" backcolor="#FFFFCC" uuid="38712af9-e43a-4fc7-9c06-f96dbb935680"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Hasil Penilaian]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="table 2_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="477344fd-c401-4c3c-83f0-08c7e3f2aa3d"/>
+								<textFieldExpression><![CDATA[$F{hasil_penilaian}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -585,7 +585,9 @@ public class MenuUtama extends javax.swing.JFrame {
         try{
             String namaFile = "src/laporan/LaporanHasilSeleksi.jasper";
             HashMap parameter = new HashMap();
-            parameter.put("PATH_IMG","src/image/");
+            // Get absolute path to image directory
+            File imageDir = new File("src/image/");
+            parameter.put("PATH_IMG", imageDir.getAbsolutePath() + File.separator);
             File report_file = new File(namaFile);
             JasperReport jasperReport = (JasperReport) JRLoader.loadObject(report_file.getPath());
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameter, conn);
@@ -612,7 +614,9 @@ public class MenuUtama extends javax.swing.JFrame {
         try{
             String namaFile = "src/laporan/LaporanPrioritasSubKriteria.jasper";
             HashMap parameter = new HashMap();
-            parameter.put("PATH_IMG","src/image/");
+            // Get absolute path to image directory
+            File imageDir = new File("src/image/");
+            parameter.put("PATH_IMG", imageDir.getAbsolutePath() + File.separator);
             File report_file = new File(namaFile);
             JasperReport jasperReport = (JasperReport) JRLoader.loadObject(report_file.getPath());
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameter, conn);
@@ -639,7 +643,9 @@ public class MenuUtama extends javax.swing.JFrame {
         try{
             String namaFile = "src/laporan/LaporanPrioritasKriteria.jasper";
             HashMap parameter = new HashMap();
-            parameter.put("PATH_IMG","src/image/");
+            // Get absolute path to image directory
+            File imageDir = new File("src/image/");
+            parameter.put("PATH_IMG", imageDir.getAbsolutePath() + File.separator);
             File report_file = new File(namaFile);
             JasperReport jasperReport = (JasperReport) JRLoader.loadObject(report_file.getPath());
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameter, conn);
@@ -666,7 +672,9 @@ public class MenuUtama extends javax.swing.JFrame {
         try{
             String namaFile = "src/laporan/LaporanSupplier.jasper";
             HashMap parameter = new HashMap();
-            parameter.put("PATH_IMG","src/image/");
+            // Get absolute path to image directory
+            File imageDir = new File("src/image/");
+            parameter.put("PATH_IMG", imageDir.getAbsolutePath() + File.separator);
             File report_file = new File(namaFile);
             JasperReport jasperReport = (JasperReport) JRLoader.loadObject(report_file.getPath());
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameter, conn);

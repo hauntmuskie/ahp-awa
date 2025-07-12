@@ -134,11 +134,10 @@ Kec. Cikarang Timur, Kab. Bekasi, Provinsi Jawa Barat, Indonesia 17530]]></text>
 			</staticText>
 			<line>
 				<reportElement positionType="Float" x="0" y="116" width="802" height="1" uuid="3dca53f9-4a8b-488d-a484-2fbddfa8fea9"/>
-			</line>
-			<image>
-				<reportElement x="20" y="13" width="202" height="88" uuid="db9de017-af3c-4a4e-a957-af72ee7f33ec"/>
-				<imageExpression><![CDATA["C:\\Users\\BangDul Official\\OneDrive\\Dokumen\\alum.jpg"]]></imageExpression>
-			</image>
+			</line>		<image>
+			<reportElement x="20" y="13" width="202" height="88" uuid="db9de017-af3c-4a4e-a957-af72ee7f33ec"/>
+			<imageExpression><![CDATA[$P{PATH_IMG} + "alum.png"]]></imageExpression>
+		</image>
 		</band>
 	</title>
 	<pageHeader>

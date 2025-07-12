@@ -71,11 +71,10 @@
 			</staticText>
 			<line>
 				<reportElement x="0" y="113" width="555" height="1" uuid="3dca53f9-4a8b-488d-a484-2fbddfa8fea9"/>
-			</line>
-			<image>
-				<reportElement x="0" y="30" width="148" height="71" uuid="378eb59e-fd96-42c3-852e-2bd2bb50bf5e"/>
-				<imageExpression><![CDATA["C:\\Users\\BangDul Official\\OneDrive\\Dokumen\\alum.jpg"]]></imageExpression>
-			</image>
+			</line>		<image>
+			<reportElement x="0" y="30" width="148" height="71" uuid="378eb59e-fd96-42c3-852e-2bd2bb50bf5e"/>
+			<imageExpression><![CDATA[$P{PATH_IMG} + "alum.png"]]></imageExpression>
+		</image>
 		</band>
 	</title>
 	<pageHeader>

@@ -67,13 +67,10 @@
 		<queryString language="SQL">
 			<![CDATA[SELECT * FROM seleksi ORDER BY hasil_penilaian DESC;]]>
 		</queryString>
-		<field name="id_paket" class="java.lang.String">
+		<field name="id_supplier" class="java.lang.String">
 			<fieldDescription><![CDATA[]]></fieldDescription>
 		</field>
-		<field name="nama_paket" class="java.lang.String">
-			<fieldDescription><![CDATA[]]></fieldDescription>
-		</field>
-		<field name="jumlah_orang" class="java.lang.String">
+		<field name="nama_supplier" class="java.lang.String">
 			<fieldDescription><![CDATA[]]></fieldDescription>
 		</field>
 		<field name="hasil_penilaian" class="java.math.BigDecimal">
@@ -119,11 +116,10 @@ FROM
 			</staticText>
 			<line>
 				<reportElement positionType="Float" x="0" y="113" width="555" height="1" uuid="3dca53f9-4a8b-488d-a484-2fbddfa8fea9"/>
-			</line>
-			<image>
-				<reportElement x="0" y="30" width="148" height="71" uuid="9fa9fc10-f281-4d29-83e4-8c8f72311b20"/>
-				<imageExpression><![CDATA["C:\\Users\\BangDul Official\\OneDrive\\Dokumen\\alum.jpg"]]></imageExpression>
-			</image>
+			</line>		<image>
+			<reportElement x="0" y="30" width="148" height="71" uuid="9fa9fc10-f281-4d29-83e4-8c8f72311b20"/>
+			<imageExpression><![CDATA[$P{PATH_IMG} + "alum.png"]]></imageExpression>
+		</image>
 		</band>
 	</title>
 	<pageHeader>

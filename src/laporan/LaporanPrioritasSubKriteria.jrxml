@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="laporan prioritas sub kriteria" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a35a0630-0e03-4d5f-8867-47fd086f8695">
 	<property name="ireport.zoom" value="1.1000000000000005"/>
 	<property name="ireport.x" value="0"/>
@@ -45,12 +46,18 @@
 	</subDataset>
 	<parameter name="PATH_IMG" class="java.lang.String"/>
 	<queryString>
-		<![CDATA[SELECT * FROM sub_kriteria;]]>
+		<![CDATA[SELECT * FROM sub_kriteria ORDER BY kd_kriteria, no_sub;]]>
 	</queryString>
+	<field name="no_sub" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
 	<field name="kd_kriteria" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="nama_kriteria" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_sub_kriteria" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="prioritas_kepentingan" class="java.lang.String">
@@ -60,37 +67,36 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="119" splitType="Stretch">
+		<band height="110" splitType="Stretch">
 			<staticText>
-				<reportElement x="148" y="30" width="407" height="27" uuid="24420867-119c-4247-bddc-fc9aa94c8b3b"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-					<font fontName="SansSerif" size="18" isBold="true" isItalic="false"/>
+				<reportElement x="150" y="10" width="405" height="25" uuid="24420867-119c-4247-bddc-fc9aa94c8b3b"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="16" isBold="true"/>
 				</textElement>
 				<text><![CDATA[PT ARJUNA LESTARI UTAMA]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="148" y="57" width="407" height="44" uuid="ca1b2c60-1bab-4032-8065-18763fff9495"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-					<font fontName="SansSerif" size="11" isItalic="false"/>
+				<reportElement x="150" y="35" width="405" height="30" uuid="ca1b2c60-1bab-4032-8065-18763fff9495"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="11" isBold="false"/>
 				</textElement>
-				<text><![CDATA[KAWASAN INDUSTRI JABABEKA V, Jl. Science Boulevard A2 No. 8, Desa 
-Sertajaya, Kec. Cikarang Timur, Kab. Bekasi, Provinsi Jawa Barat, Indonesia 17530]]></text>
+				<text><![CDATA[KAWASAN INDUSTRI JABABEKA V, Jl. Science Boulevard A2 No. 8, Desa Sertajaya, Kec. Cikarang Timur, Kab. Bekasi, Provinsi Jawa Barat, Indonesia 17530]]></text>
 			</staticText>
 			<line>
-				<reportElement x="0" y="113" width="555" height="1" uuid="3dca53f9-4a8b-488d-a484-2fbddfa8fea9"/>
+				<reportElement x="0" y="105" width="555" height="1" uuid="3dca53f9-4a8b-488d-a484-2fbddfa8fea9"/>
 			</line>
 			<image>
-				<reportElement x="0" y="30" width="148" height="71" uuid="e750d204-32f2-4a2a-a54c-7476adce8821"/>
-				<imageExpression><![CDATA["C:\\Users\\BangDul Official\\OneDrive\\Dokumen\\alum.jpg"]]></imageExpression>
+				<reportElement x="0" y="0" width="140" height="80" uuid="da31d287-fc5c-44eb-b299-44e6965e63d4"/>
+				<imageExpression><![CDATA["https://github.com/hauntmuskie/ahp-awa/blob/main/src/image/alum.png?raw=true"]]></imageExpression>
 			</image>
 		</band>
 	</title>
 	<pageHeader>
-		<band height="35" splitType="Stretch">
+		<band height="50" splitType="Stretch">
 			<staticText>
-				<reportElement positionType="Float" x="0" y="0" width="555" height="35" uuid="3a8735f4-c1cf-4e2c-900f-c320717556d5"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-					<font fontName="SansSerif" size="14" isBold="true" isItalic="false" pdfFontName="Helvetica"/>
+				<reportElement x="0" y="20" width="555" height="28" uuid="3a8735f4-c1cf-4e2c-900f-c320717556d5"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="18" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Laporan Prioritas Sub Kriteria]]></text>
 			</staticText>
@@ -227,36 +233,40 @@ Sertajaya, Kec. Cikarang Timur, Kab. Bekasi, Provinsi Jawa Barat, Indonesia 1753
 				</jr:table>
 			</componentElement>
 			<staticText>
-				<reportElement positionType="Float" x="360" y="137" width="195" height="20" uuid="b1267653-2ae2-4de2-8204-d57a8356e3b5"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="12"/>
+				<reportElement positionType="Float" x="360" y="117" width="44" height="20" uuid="9be7ff10-e7e3-49ab-a3c5-942e05b05002"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Jawa Barat, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="360" y="139" width="68" height="22" uuid="b1267653-2ae2-4de2-8204-d57a8356e3b5"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Mengetahui,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="360" y="161" width="195" height="20" uuid="b1267653-2ae2-4de2-8204-d57a8356e3b5"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Manager]]></text>
 			</staticText>
-			<line>
-				<reportElement positionType="Float" x="360" y="213" width="195" height="1" uuid="68da9153-e86b-43cf-aae9-babf865a0bb3"/>
-			</line>
-			<staticText>
-				<reportElement positionType="Float" x="360" y="117" width="67" height="20" uuid="9be7ff10-e7e3-49ab-a3c5-942e05b05002"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="12"/>
-				</textElement>
-				<text><![CDATA[Jawa Barat,]]></text>
-			</staticText>
-			<textField pattern="EEEEE dd MMMMM yyyy">
-				<reportElement positionType="Float" x="427" y="117" width="128" height="20" uuid="eae5f596-88a3-49cc-97c0-d6d797a8d59e"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="12"/>
-				</textElement>
-				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement positionType="Float" x="360" y="214" width="195" height="20" uuid="d0984187-0f97-4c3a-8e07-c91db6c2e18a"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="12"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Feni Astuti]]></text>
 			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement positionType="Float" x="404" y="117" width="151" height="20" uuid="eae5f596-88a3-49cc-97c0-d6d797a8d59e"/>
+				<textElement rotation="None">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
 		</band>
 	</columnHeader>
 	<detail>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="laporan prioritas kriteria" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a35a0630-0e03-4d5f-8867-47fd086f8695">
 	<property name="ireport.zoom" value="1.0000000000000004"/>
 	<property name="ireport.x" value="0"/>
@@ -54,36 +55,36 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="119" splitType="Stretch">
+		<band height="110" splitType="Stretch">
 			<staticText>
-				<reportElement x="148" y="30" width="407" height="27" uuid="24420867-119c-4247-bddc-fc9aa94c8b3b"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-					<font fontName="SansSerif" size="18" isBold="true" isItalic="false"/>
+				<reportElement x="150" y="10" width="405" height="25" uuid="24420867-119c-4247-bddc-fc9aa94c8b3b"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="16" isBold="true"/>
 				</textElement>
 				<text><![CDATA[PT ARJUNA LESTARI UTAMA]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="148" y="57" width="407" height="44" uuid="ca1b2c60-1bab-4032-8065-18763fff9495"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-					<font fontName="SansSerif" size="11" isItalic="false"/>
+				<reportElement x="150" y="35" width="405" height="30" uuid="ca1b2c60-1bab-4032-8065-18763fff9495"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="11" isBold="false"/>
 				</textElement>
 				<text><![CDATA[KAWASAN INDUSTRI JABABEKA V, Jl. Science Boulevard A2 No. 8, Desa Sertajaya, Kec. Cikarang Timur, Kab. Bekasi, Provinsi Jawa Barat, Indonesia 17530]]></text>
 			</staticText>
 			<line>
-				<reportElement x="0" y="113" width="555" height="1" uuid="3dca53f9-4a8b-488d-a484-2fbddfa8fea9"/>
+				<reportElement x="0" y="105" width="555" height="1" uuid="3dca53f9-4a8b-488d-a484-2fbddfa8fea9"/>
 			</line>
 			<image>
-				<reportElement x="0" y="30" width="148" height="71" uuid="378eb59e-fd96-42c3-852e-2bd2bb50bf5e"/>
-				<imageExpression><![CDATA["C:\\Users\\BangDul Official\\OneDrive\\Dokumen\\alum.jpg"]]></imageExpression>
+				<reportElement x="0" y="0" width="140" height="80" uuid="5c2ebeee-b789-4c2c-ae50-9a18525fbc85"/>
+				<imageExpression><![CDATA["https://github.com/hauntmuskie/ahp-awa/blob/main/src/image/alum.png?raw=true"]]></imageExpression>
 			</image>
 		</band>
 	</title>
 	<pageHeader>
-		<band height="35" splitType="Stretch">
+		<band height="50" splitType="Stretch">
 			<staticText>
-				<reportElement positionType="Float" x="0" y="0" width="555" height="35" uuid="3a8735f4-c1cf-4e2c-900f-c320717556d5"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-					<font fontName="SansSerif" size="14" isBold="true" isItalic="false" pdfFontName="Helvetica"/>
+				<reportElement x="0" y="20" width="555" height="28" uuid="3a8735f4-c1cf-4e2c-900f-c320717556d5"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="18" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Laporan Prioritas Kriteria]]></text>
 			</staticText>
@@ -206,23 +207,37 @@
 				<reportElement positionType="Float" x="357" y="213" width="198" height="1" uuid="d9f9cf15-f7f3-4eaa-97b3-d4f0457eed2e"/>
 			</line>
 			<staticText>
-				<reportElement positionType="Float" x="357" y="117" width="70" height="20" uuid="6bdf0088-71c0-4cc6-b548-4f0377709e3a"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="12"/>
+				<reportElement positionType="Float" x="357" y="117" width="44" height="20" uuid="6bdf0088-71c0-4cc6-b548-4f0377709e3a"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Jawa Barat, ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement positionType="Float" x="357" y="137" width="198" height="20" uuid="e8476ef6-3c49-44bd-9af2-becb9afe885d"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="12"/>
+				<reportElement positionType="Float" x="357" y="139" width="68" height="22" uuid="e8476ef6-3c49-44bd-9af2-becb9afe885d"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Mengetahui,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="357" y="161" width="198" height="20" uuid="e8476ef6-3c49-44bd-9af2-becb9afe885d"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Manager]]></text>
 			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="357" y="214" width="198" height="20" uuid="ba0f7ab6-e9ed-4ae7-aa12-8328ca724ec1"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Feni Astuti]]></text>
+			</staticText>
 			<textField pattern="EEEEE dd MMMMM yyyy">
-				<reportElement positionType="Float" x="427" y="117" width="128" height="20" uuid="cd7d6e4d-2c88-41c1-bcec-98bf890d126d"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="12"/>
+				<reportElement positionType="Float" x="401" y="117" width="154" height="20" uuid="cd7d6e4d-2c88-41c1-bcec-98bf890d126d"/>
+				<textElement rotation="None">
+					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>

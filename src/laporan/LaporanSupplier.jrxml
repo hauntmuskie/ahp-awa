@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="laporan data supplier" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a35a0630-0e03-4d5f-8867-47fd086f8695">
 	<property name="ireport.zoom" value="0.8264462809917359"/>
 	<property name="ireport.x" value="0"/>
@@ -116,37 +117,36 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="119" splitType="Stretch">
+		<band height="110" splitType="Stretch">
 			<staticText>
-				<reportElement x="222" y="13" width="499" height="48" uuid="24420867-119c-4247-bddc-fc9aa94c8b3b"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-					<font fontName="SansSerif" size="30" isBold="true" isItalic="false"/>
+				<reportElement x="150" y="10" width="500" height="25" uuid="24420867-119c-4247-bddc-fc9aa94c8b3b"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="16" isBold="true"/>
 				</textElement>
 				<text><![CDATA[PT ARJUNA LESTARI UTAMA]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="222" y="61" width="499" height="40" uuid="ca1b2c60-1bab-4032-8065-18763fff9495"/>
-				<textElement textAlignment="Center" markup="none">
-					<font fontName="SansSerif" size="12" isItalic="false"/>
+				<reportElement x="150" y="35" width="500" height="30" uuid="ca1b2c60-1bab-4032-8065-18763fff9495"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="11" isBold="false"/>
 				</textElement>
-				<text><![CDATA[KAWASAN INDUSTRI JABABEKA V, Jl. Science Boulevard A2 No. 8, Desa Sertajaya, 
-Kec. Cikarang Timur, Kab. Bekasi, Provinsi Jawa Barat, Indonesia 17530]]></text>
+				<text><![CDATA[KAWASAN INDUSTRI JABABEKA V, Jl. Science Boulevard A2 No. 8, Desa Sertajaya, Kec. Cikarang Timur, Kab. Bekasi, Provinsi Jawa Barat, Indonesia 17530]]></text>
 			</staticText>
 			<line>
-				<reportElement positionType="Float" x="0" y="116" width="802" height="1" uuid="3dca53f9-4a8b-488d-a484-2fbddfa8fea9"/>
+				<reportElement x="0" y="105" width="802" height="1" uuid="3dca53f9-4a8b-488d-a484-2fbddfa8fea9"/>
 			</line>
 			<image>
-				<reportElement x="20" y="13" width="202" height="88" uuid="db9de017-af3c-4a4e-a957-af72ee7f33ec"/>
-				<imageExpression><![CDATA["C:\\Users\\BangDul Official\\OneDrive\\Dokumen\\alum.jpg"]]></imageExpression>
+				<reportElement x="0" y="0" width="140" height="80" uuid="07f81458-fd29-4ad5-8050-c30afca3e371"/>
+				<imageExpression><![CDATA["https://github.com/hauntmuskie/ahp-awa/blob/main/src/image/alum.png?raw=true"]]></imageExpression>
 			</image>
 		</band>
 	</title>
 	<pageHeader>
 		<band height="50" splitType="Stretch">
 			<staticText>
-				<reportElement positionType="Float" x="0" y="0" width="802" height="49" uuid="3a8735f4-c1cf-4e2c-900f-c320717556d5"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-					<font fontName="SansSerif" size="26" isBold="true" isItalic="false" pdfFontName="Helvetica"/>
+				<reportElement x="219" y="20" width="372" height="28" uuid="3a8735f4-c1cf-4e2c-900f-c320717556d5"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="18" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Laporan Data Supplier]]></text>
 			</staticText>
@@ -154,37 +154,41 @@ Kec. Cikarang Timur, Kab. Bekasi, Provinsi Jawa Barat, Indonesia 17530]]></text>
 	</pageHeader>
 	<columnHeader>
 		<band height="234" splitType="Stretch">
-			<textField pattern="EEEEE dd MMMMM yyyy">
-				<reportElement positionType="Float" x="689" y="117" width="113" height="20" uuid="7a83569e-1d27-455b-98c0-5578e37dcdda"/>
-				<textElement>
-					<font fontName="SansSerif" size="12"/>
-				</textElement>
-				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
-			</textField>
 			<staticText>
-				<reportElement positionType="Float" x="615" y="137" width="187" height="20" uuid="36646086-3158-4000-96bf-e9bb05734b25"/>
-				<textElement textAlignment="Center">
-					<font fontName="SansSerif" size="12"/>
+				<reportElement positionType="Float" x="615" y="117" width="44" height="20" uuid="f261e112-ec79-4b02-abe8-f6944dff98d9"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Jawa Barat, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="615" y="139" width="68" height="22" uuid="36646086-3158-4000-96bf-e9bb05734b25"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Mengetahui,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="615" y="161" width="187" height="20" uuid="36646086-3158-4000-96bf-e9bb05734b25"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Manager]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" x="615" y="212" width="187" height="20" uuid="4a8ab4cd-d78f-45ec-b765-d677eedff35e"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="12"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Feni Astuti]]></text>
 			</staticText>
-			<line>
-				<reportElement positionType="Float" x="615" y="212" width="187" height="1" uuid="c3985f27-b569-4ac7-ab40-81febbe1e589"/>
-			</line>
-			<staticText>
-				<reportElement positionType="Float" x="615" y="117" width="74" height="20" uuid="f261e112-ec79-4b02-abe8-f6944dff98d9"/>
-				<textElement textAlignment="Center">
-					<font fontName="SansSerif" size="12"/>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement positionType="Float" x="659" y="117" width="143" height="20" uuid="7a83569e-1d27-455b-98c0-5578e37dcdda"/>
+				<textElement rotation="None">
+					<font size="12"/>
 				</textElement>
-				<text><![CDATA[Jawa Barat, ]]></text>
-			</staticText>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
 			<componentElement>
 				<reportElement key="table 1" style="table 1" x="0" y="0" width="802" height="78" uuid="9782ff1a-2478-4702-a5ea-4e5f08b3bc6f"/>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
@@ -448,10 +452,10 @@ Pengiriman]]></text>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="90" uuid="47fae208-2cfc-44e6-90d2-e3ba3b224d8f">
+					<jr:column width="97" uuid="47fae208-2cfc-44e6-90d2-e3ba3b224d8f">
 						<jr:tableHeader style="table 1_TH" height="30" rowSpan="1">
 							<staticText>
-								<reportElement mode="Opaque" x="0" y="0" width="90" height="30" backcolor="#FFFFCC" uuid="d53e12c4-0bdd-455a-b544-f2bbecf1fed1"/>
+								<reportElement mode="Opaque" x="0" y="0" width="97" height="30" backcolor="#FFFFCC" uuid="d53e12c4-0bdd-455a-b544-f2bbecf1fed1"/>
 								<box>
 									<pen lineWidth="0.5"/>
 									<topPen lineWidth="0.5"/>
@@ -468,7 +472,7 @@ Jumlah]]></text>
 						</jr:tableHeader>
 						<jr:detailCell style="table 1_TD" height="35" rowSpan="1">
 							<textField>
-								<reportElement x="0" y="0" width="90" height="35" uuid="7c0c8747-400d-481c-a3d2-8a1261ea66b0"/>
+								<reportElement x="0" y="0" width="97" height="35" uuid="7c0c8747-400d-481c-a3d2-8a1261ea66b0"/>
 								<box>
 									<pen lineWidth="0.5"/>
 									<topPen lineWidth="0.5"/>

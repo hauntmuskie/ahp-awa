@@ -1,10 +1,9 @@
 package menuutama;
 
 import LoginAdmin.Login;
-import com.mysql.jdbc.Connection;
 import java.awt.Color;
 import java.awt.Cursor;
-import java.io.File;
+import java.sql.Connection;
 import java.util.HashMap;
 import java.util.Locale;
 import javax.swing.JOptionPane;
@@ -12,8 +11,6 @@ import javax.swing.JPanel;
 import koneksi.Koneksi;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
-import net.sf.jasperreports.engine.JasperReport;
-import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.view.JasperViewer;
 
 /**
@@ -637,7 +634,7 @@ public class MenuUtama extends javax.swing.JFrame {
 
     private void laporanHasilSeleksiMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_laporanHasilSeleksiMouseClicked
         try {
-            String report = "./src/laporan/LaporanHasilSeleksi.jasper";
+            String report = "./src/laporan/laporan_hasil_seleksi.jasper";
             HashMap<String, Object> param = new HashMap<>();
             JasperPrint print = JasperFillManager.fillReport(report, param, conn);
             JasperViewer.viewReport(print, false);
@@ -659,7 +656,7 @@ public class MenuUtama extends javax.swing.JFrame {
 
     private void laporanPrioritasSubKriteriaMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_laporanPrioritasSubKriteriaMouseClicked
         try {
-            String report = "./src/laporan/LaporanPrioritasSubKriteria.jasper";
+            String report = "./src/laporan/laporan_prioritas_sub_kriteria.jasper";
             HashMap<String, Object> param = new HashMap<>();
             JasperPrint print = JasperFillManager.fillReport(report, param, conn);
             JasperViewer.viewReport(print, false);
@@ -681,7 +678,7 @@ public class MenuUtama extends javax.swing.JFrame {
 
     private void laporanPrioritasKriteriaMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_laporanPrioritasKriteriaMouseClicked
         try {
-            String report = "./src/laporan/LaporanPrioritasKriteria.jasper";
+            String report = "./src/laporan/laporan_prioritas_kriteria.jasper";
             HashMap<String, Object> param = new HashMap<>();
             JasperPrint print = JasperFillManager.fillReport(report, param, conn);
             JasperViewer.viewReport(print, false);
@@ -703,7 +700,7 @@ public class MenuUtama extends javax.swing.JFrame {
 
     private void laporanDataSupplierMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_laporanDataSupplierMouseClicked
         try {
-            String report = "./src/laporan/LaporanSupplier.jasper";
+            String report = "./src/laporan/laporan_supplier.jasper";
             HashMap<String, Object> param = new HashMap<>();
             JasperPrint print = JasperFillManager.fillReport(report, param, conn);
             JasperViewer.viewReport(print, false);

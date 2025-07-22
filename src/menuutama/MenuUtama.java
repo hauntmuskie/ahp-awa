@@ -639,6 +639,7 @@ public class MenuUtama extends javax.swing.JFrame {
             JasperPrint print = JasperFillManager.fillReport(report, param, conn);
             JasperViewer.viewReport(print, false);
         } catch (Exception ex) {
+            System.err.println(ex);
             JOptionPane.showMessageDialog(rootPane, ex);
         }
     }// GEN-LAST:event_laporanHasilSeleksiMouseClicked

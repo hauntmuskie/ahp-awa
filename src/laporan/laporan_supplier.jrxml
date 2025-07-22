@@ -30,43 +30,22 @@
 	<title>
 		<band height="110" splitType="Stretch">
 			<image>
-				<reportElement x="0" y="0" width="90" height="90" uuid="305b25ff-1b88-4ed2-9d92-7e28480db2b6"/>
+				<reportElement x="0" y="0" width="160" height="100" uuid="305b25ff-1b88-4ed2-9d92-7e28480db2b6"/>
 				<imageExpression><![CDATA["https://github.com/hauntmuskie/ahp-awa/blob/main/src/image/alum.png?raw=true"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="150" y="10" width="500" height="25" uuid="e058eb80-7313-45d1-8ba6-749e1465c0a6"/>
 				<textElement textAlignment="Center">
-					<font fontName="Times New Roman" size="16" isBold="true"/>
+					<font fontName="Times New Roman" size="20" isBold="true"/>
 				</textElement>
 				<text><![CDATA[PT ARJUNA LESTARI UTAMA]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="150" y="30" width="500" height="30" uuid="f01d1e8b-7dc1-40d1-9dff-525d5c1ecf48"/>
+				<reportElement x="150" y="50" width="500" height="30" uuid="7eec69e9-1116-4fd9-969e-6248998295dd"/>
 				<textElement textAlignment="Center">
-					<font fontName="Times New Roman" size="16" isBold="true"/>
-				</textElement>
-				<text><![CDATA[]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="150" y="50" width="500" height="15" uuid="d418aa34-26ba-4eb9-81db-cb46948ac57a"/>
-				<textElement textAlignment="Center">
-					<font fontName="Times New Roman" size="11" isBold="true"/>
-				</textElement>
-				<text><![CDATA[]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="150" y="65" width="500" height="15" uuid="7eec69e9-1116-4fd9-969e-6248998295dd"/>
-				<textElement textAlignment="Center">
-					<font fontName="Times New Roman" size="11"/>
+					<font fontName="Times New Roman" size="12"/>
 				</textElement>
 				<text><![CDATA[KAWASAN INDUSTRI JABABEKA V, Jl. Science Boulevard A2 No. 8  Desa Sertajaya, Kec. Cikarang Timur, Kab. Bekasi, Provinsi Jawa Barat,  Indonesia 17530.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="150" y="80" width="500" height="15" uuid="b83814b3-a4bb-4c8b-a330-6985a754f781"/>
-				<textElement textAlignment="Center">
-					<font fontName="Times New Roman" size="11"/>
-				</textElement>
-				<text><![CDATA[]]></text>
 			</staticText>
 		</band>
 	</title>
@@ -86,6 +65,27 @@
 	</pageHeader>
 	<columnHeader>
 		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="50" y="0" width="50" height="30" uuid="a1a1a1a1-1001-1001-1001-1001a1a1a1a1"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="100" y="0" width="120" height="30" uuid="a1a1a1a1-1002-1002-1002-1002a1a1a1a2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="220" y="0" width="100" height="30" uuid="a1a1a1a1-1003-1003-1003-1003a1a1a1a3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="320" y="0" width="80" height="30" uuid="a1a1a1a1-1004-1004-1004-1004a1a1a1a4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="400" y="0" width="100" height="30" uuid="a1a1a1a1-1005-1005-1005-1005a1a1a1a5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="500" y="0" width="120" height="30" uuid="a1a1a1a1-1006-1006-1006-1006a1a1a1a6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="620" y="0" width="120" height="30" uuid="a1a1a1a1-1007-1007-1007-1007a1a1a1a7"/>
+			</rectangle>
 			<staticText>
 				<reportElement x="50" y="0" width="50" height="30" uuid="b5b05265-7aea-4b20-83dd-c66a2ab579cb"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -139,6 +139,27 @@
 	</columnHeader>
 	<detail>
 		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="50" y="0" width="50" height="20" uuid="a1a1a1a1-1011-1011-1011-1011a1a1a1a1"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="100" y="0" width="120" height="20" uuid="a1a1a1a1-1012-1012-1012-1012a1a1a1a2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="220" y="0" width="100" height="20" uuid="a1a1a1a1-1013-1013-1013-1013a1a1a1a3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="320" y="0" width="80" height="20" uuid="a1a1a1a1-1014-1014-1014-1014a1a1a1a4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="400" y="0" width="100" height="20" uuid="a1a1a1a1-1015-1015-1015-1015a1a1a1a5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="500" y="0" width="120" height="20" uuid="a1a1a1a1-1016-1016-1016-1016a1a1a1a6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="620" y="0" width="120" height="20" uuid="a1a1a1a1-1017-1017-1017-1017a1a1a1a7"/>
+			</rectangle>
 			<textField>
 				<reportElement x="50" y="0" width="50" height="20" uuid="429920e1-13ac-4d6b-89fb-ddb8a5ed517f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -191,7 +212,7 @@
 		</band>
 	</detail>
 	<pageFooter>
-		<band height="129" splitType="Stretch">
+		<band height="169" splitType="Stretch">
 			<staticText>
 				<reportElement x="630" y="20" width="36" height="20" uuid="31b9f18f-50c5-4b3b-a402-90d859d59003"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
@@ -211,17 +232,17 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="12"/>
 				</textElement>
-				<text><![CDATA[Manager,]]></text>
+				<text><![CDATA[Mengetahui,]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="630" y="60" width="86" height="20" uuid="23f27c82-c26f-414e-9bcb-40c831c84d55"/>
+				<reportElement x="630" y="60" width="50" height="20" uuid="23f27c82-c26f-414e-9bcb-40c831c84d55"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="12"/>
 				</textElement>
 				<text><![CDATA[Manager]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="630" y="80" width="74" height="20" uuid="1e36486c-6034-4c3a-b844-1896215ea0cc"/>
+				<reportElement x="630" y="149" width="60" height="20" uuid="1e36486c-6034-4c3a-b844-1896215ea0cc"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="12"/>
 				</textElement>
